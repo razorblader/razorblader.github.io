@@ -1,0 +1,140 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B6F0DD;
+    color: black;
+    padding: 10px;
+}
+
+.navbar img {
+    width: 50px; /* Aumentamos el tamaño del logo */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-menu img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    top: 40px;
+    right: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.user-menu:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos para el contenido de la identidad */
+.identity-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Alineación del contenido al centro */
+}
+
+.identity-container h1 {
+    margin-bottom: 20px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mission,
+.vision {
+    width: 48%;
+}
+
+.values,
+.objectives {
+    margin-bottom: 40px;
+}
+
+.values h2,
+.objectives h2 {
+    margin-bottom: 20px;
+}
+
+.values ul,
+.objectives ol {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.values ul li,
+.objectives ol li {
+    margin-bottom: 10px;
+}
+
+.values ul li::before,
+.objectives ol li::before {
+    content: '•';
+    margin-right: 5px;
+    color: #000; /* Viñetas en negro */
+}
+
+.objectives ol li {
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón "Volver al Menú Principal" */
+.back-to-main {
+    background-color: #b3eedc;
+    /* Color de fondo del botón */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px; /* Agregar espacio en la parte superior */
+}

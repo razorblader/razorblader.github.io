@@ -1,0 +1,65 @@
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #343a40;
+        }
+
+        .thumbnail {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .thumbnail img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .thumbnail h4 {
+            color: #343a40;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .thumbnail p {
+            color: #6c757d;
+            font-size: 16px;
+        }
+
+        .thumbnail .lead {
+            font-size: 20px;
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .btn-default {
+            background-color: #343a40;
+            border-color: #343a40;
+            color: #fff;
+        }
+
+        .btn-default:hover {
+            background-color: #212529;
+            border-color: #212529;
+        }
+        img{
+            background-image: url('../90min/img/fut.jpg');
+            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    padding: 20px; 
+    width: 400px;
+    max-height: 300px;
+        }
+        
+    

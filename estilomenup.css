@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+.nav {
+    background-color: #b7b7b7; /* Color de fondo de la barra de navegación */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 15px solid #2d7dff; /* Línea blanca debajo de la barra de navegación */
+  }
+  
+  .logo img {
+    max-height: 100px; /* Ajusta la altura de tu logo según sea necesario */
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    display: inline;
+  }
+  
+  .nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none;
+    padding: 10px 20px; /* Espacio alrededor del texto del enlace */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+  }
+  
+  .nav ul li a:hover {
+    background-color: #555; /* Color de fondo cuando el enlace está en hover */
+  }
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-input {
+    width: 520px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.external-menu {
+    display: flex;
+}
+
+.external-menu button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    background-color: initial;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    right: 0;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.external-menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.external-menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.buttons-bar {
+    background-color: #ecf4f2;
+    padding: 10px;
+}
+
+
+
+.container {
+    text-align: center; /* Centra los botones al medio */
+}
+
+.external-menu {
+    display: inline-block; /* Cambia a display inline-block */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropbtn {
+    background-color: #f9fdfc;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropbtn:hover {
+    background-color: #80E0C7;
+}
+.hero-section {
+    position: relative;
+    background-image: url('imgb2.png'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 250px 0;
+    color: #ffffff;
+
+}
+.hero-section h1 {
+    font-size: 48px;
+}
+.hero-section p {
+    font-size: 18px;
+}
+.team-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 2px solid #ccc; /* Agrega un borde a la imagen */
+}
+
+.team-logo p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.equipment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.equipment-item {
+    text-align: center;
+}
+
+.equipment-item button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.equipment-item button:hover img {
+    transform: scale(1.1);
+}
+
+.equipment-item button img {
+    max-height: 400px;
+    width: 400px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.equipment-item .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.equipment-item button:hover .text {
+    opacity: 1;
+}
